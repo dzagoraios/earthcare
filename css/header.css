@@ -9,3 +9,8 @@ header{
     height: 110px;    
     object-fit: contain;
 }
+
+li {
+    display: inline;
+}
+
