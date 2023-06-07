@@ -8,8 +8,8 @@ header{
 }
 
 #logo{
-    height: 40px;    
-    object-fit: contain;
+    border: 0px;
+    height: 100%;
 }
 
 
