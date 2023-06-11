@@ -3,7 +3,25 @@ body {
 
 }
 
-header{
+#header {
     width: 100%;
     border: 0px;
+	height: 80px;
 }
+
+#mainPage { 
+	width=100%;
+}
+
+#footer {
+	width: 100%;
+    border: 0px;
+	height: 100px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
