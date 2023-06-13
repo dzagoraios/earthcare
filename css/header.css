@@ -5,14 +5,12 @@ header{
     position: sticky; 
     color: white;
     font-weight: bold;
-	overflow: visible;
 }
 
 nav{
 	left: 0px; 
 	top: 0px;
 	height: 100%;
-
 }
 
 #logo{

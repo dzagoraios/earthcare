@@ -26,5 +26,11 @@ img {
 
 .btn {
 	background-color: #2EBFA5;
+	border: 0px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: rgba(46, 191, 165, .7);
+	border: 0px;
 }
 
