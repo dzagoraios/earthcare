@@ -10,7 +10,7 @@ body {
 main {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/2803064_17627-removebg-preview.png");\
 	
@@ -21,10 +21,8 @@ main {
 	background-color: rgba(243, 236, 206, .5);
 }
 
-#mainGrid {
-	padding: 4px;
-}
-
 #articles {
 	padding: 4px;
+	padding-top: 15px;
+	padding-bottom:15px;
 }
