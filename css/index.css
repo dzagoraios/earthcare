@@ -8,21 +8,51 @@ body {
 }
 
 main {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/2803064_17627-removebg-preview.png");\
-	
+
 	/*<a href='https://www.freepik.com/free-vector/illustration-human-avatar-with-environment_2803064.htm#query=sustainable%20city&position=0&from_view=keyword&track=ais'>Image by rawpixel.com</a> on Freepik*/
 }
 
 #mainGrid{
 	background-color: rgba(243, 236, 206, .5);
+	width:100%;
+	justify-content: center;
 }
 
 #articles {
 	padding: 4px;
 	padding-top: 15px;
 	padding-bottom:15px;
+}
+
+
+#events {
+	padding: 4px;
+	padding-top: 15px;
+	padding-bottom:15px;
+}
+
+
+.article-card {
+	flex-direction: column;
+	height: 60vh;
+}
+
+
+.event-card {
+	flex-direction: row;
+	height: 40vh
+}
+
+.event-card img {
+	width: 40%;
+	background-image: cover;
+}
+
+@media screen and (max-width: 1050px){
+	
 }
