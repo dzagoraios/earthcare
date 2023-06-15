@@ -43,3 +43,8 @@ img {
 	border: 0px;
 }
 
+.form-check-input:checked { 
+	background-color: #2EBFA5;
+    border-color: #2EBFA5;
+}
+

@@ -10,9 +10,9 @@
 
 	<!-- external css files -->
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/signup.css">
 
-	<title>Login | Earthcare</title>
+	<title>Sign Up | Earthcare</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 
 	<!--jQuery-->
@@ -29,26 +29,37 @@
 		<!--Header loads with js/header.js-->
 	</div>
 	<main class="container">
-		<div id="loginPageContent" class="row align-items-center">
+		<div id="signUpPageContent" class="row align-items-center">
 			<div class="col text-center">
-				<h2>Σύνδεση</h2>
+				<h2>Εγγραφή</h2>
 				<br/>
-				<p>Δεν έχετε λογαριασμό;</p>
-				<a class="btn btn-primary" href="signup.html">Εγγραφή</a>
+				<p>Έχετε ήδη λογαριασμό;</p>
+				<a class="btn btn-primary" href="login.html">Σύνδεση</a>
 			</div>
 			<div class="col align-items-center">
-				<form id="loginForm" action="/action_page.php">
+				<form id="signupForm" action="/action_page.php">
 					<div class="form-group">
-						<label for="username">Όνομα χρήστη:</label>
-						<input type="username" class="form-control" id="username">
+						<label for="firstname">Όνομα:</label>
+						<input type="firstname" class="form-control" id="firstname">
 					</div>
 					<br/>
 					<div class="form-group">
-						<label for="password">Κωδικός πρόσβασης:</label>
-						<input type="password" class="form-control" id="password">
+						<label for="lastname">Επώνυμο:</label>
+						<input type="lastname" class="form-control" id="lastname">
 					</div>
 					<br/>
-					<button type="submit" class="btn btn-primary">Σύδεση</button>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					<br/>
+					<input class="form-check-input" type="checkbox" value="" id="AcceptTermsCheck">
+					<label class="form-check-label" for="AcceptTermsCheck">
+						Αποδέχομαι τους <a href="terms.html">όρους χρήσης</a>
+					</label>
+					<br/>
+					<br/>
+					<button type="submit" class="btn btn-primary">Δημιουργία Λογαριασμού</button>
 				</form>
 			</div>
 		</div>
