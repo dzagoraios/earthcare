@@ -40,20 +40,30 @@
 				<form id="signupForm" action="/action_page.php">
 					<div class="form-group">
 						<label for="firstname">Όνομα:</label>
-						<input type="firstname" class="form-control" id="firstname">
+						<input type="firstname" class="form-control" id="firstname" required="true">
 					</div>
 					<br/>
 					<div class="form-group">
 						<label for="lastname">Επώνυμο:</label>
-						<input type="lastname" class="form-control" id="lastname">
+						<input type="lastname" class="form-control" id="lastname" required="true">
 					</div>
 					<br/>
 					<div class="form-group">
 						<label for="email">Email:</label>
-						<input type="email" class="form-control" id="email">
+						<input type="email" class="form-control" id="email" required="true">
 					</div>
 					<br/>
-					<input class="form-check-input" type="checkbox" value="" id="AcceptTermsCheck">
+					<div class="form-group">
+						<label for="password">Κωδικός πρόσβασης:</label>
+						<input type="password" class="form-control" id="password" required="true">
+					</div>
+					<br/>
+					<div class="form-group">
+						<label for="passwordverification">Επαλήθευση Κωδικού πρόσβασης:</label>
+						<input type="password" class="form-control" id="passwordverification" required="true">
+					</div>
+					<br/>
+					<input class="form-check-input" type="checkbox" value="" id="AcceptTermsCheck" required="true">
 					<label class="form-check-label" for="AcceptTermsCheck">
 						Αποδέχομαι τους <a href="terms.html">όρους χρήσης</a>
 					</label>
