@@ -15,7 +15,8 @@ nav{
 }
 
 #logo{
- 	height: 70px;
+ 	height: 100%;
     border: 0px;
     object-fit: contain;
+	vertical-align: middle;
 }
