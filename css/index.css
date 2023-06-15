@@ -8,8 +8,8 @@
 main {
 	position: relative;
 	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 10vh;
+	margin-bottom: 1vh;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/2803064_17627-removebg-preview.png");\
