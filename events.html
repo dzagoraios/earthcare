@@ -24,13 +24,15 @@
 
 	<!--Here Maps-->
 	<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+	<script type="text/javascript" src='js/map-apikey.js'></script>
 	<script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
 	<script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
 	<script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
 	<script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
 	<script>window.ENV_VARIABLE = 'developer.here.com'</script>
 
-	<script type="text/javascript" src='js/map.js'></script>
+
+
 
 
 
@@ -46,19 +48,20 @@
 				<div class="row" id="title">
 					<h2>Εκδηλώσεις</h2>
 				</div>
-				<div class="card event-card">
-					<div class="overlay-container">
-						<img class="card-img-left overlay-image" src="img/13146308_Garbage-sorting-set.jpg" alt="Card image cap">
-						<div class="overlay">
-							<div class="map" id="map">
-								<script type="text/javascript" src='js/map.js'></script>
+				<div class="row" id="eventCards">
+					<div class="card event-card">
+						<div class="overlay-container">
+							<img class="card-img-left overlay-image" src="img/13146308_Garbage-sorting-set.jpg" alt="Card image cap">
+							<div class="overlay">
+								<div class="map" id="map" onload="createMap(0,0);"></div>
 							</div>
 						</div>
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Εκδήλωση 1</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Αγοράστε εισιτήρια</a>
+						<div class="card-body">
+							<h5 class="card-title">Εκδήλωση 1</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<p class="card-text">Ημερομηνία:</p>
+							<a href="#" class="btn btn-primary">Αγοράστε εισιτήρια</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -68,4 +71,5 @@
 		<!--Footer loads with js/footer.js-->
 	</div>
 
+	<script type="text/javascript" src='js/map.js'></script>
 </body>

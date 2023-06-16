@@ -39,18 +39,27 @@ main {
 
 .article-card {
 	flex-direction: column;
-	height: 60vh;
+	min-height: 60vh;
+	height: auto;
 }
 
+.article-card img {
+	border-top-left-radius: 0.375rem;
+	border-bottom-left-radius: 0.375rem;
+}
 
 .event-card {
 	flex-direction: row;
-	height: 40vh
+	min-height: 40vh;
+	height: auto;
 }
 
 .event-card img {
 	width: 40%;
+	height: 100%;
 	background-image: cover;
+	border-top-left-radius: 0.375rem;
+	border-bottom-left-radius: 0.375rem;
 }
 
 @media screen and (max-width: 1050px){

@@ -4,44 +4,51 @@
 
 .event-card {
 	flex-direction: row;
-	height: 40vh;
+	min-height: 40vh;
+	height: auto;
 	margin-top: 2vh;
 	margin-bottom: 2vh;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .event-card img {
 	width: 100%;
-	background-image: cover;
+	height: 100%;
+	object-fit: cover;
+	border-top-left-radius: 0.375rem;
+	border-bottom-left-radius: 0.375rem;
 }
 
 /* MAP OVERLAY*/
 
 .overlay-container {
-  position: relative;
-  width: 40%;
+	position: relative;
+	width: 40%;
+	border-top-left-radius: 0.375rem;
+	border-bottom-left-radius: 0.375rem;
 }
 
 /*
 .overlay-image {
-  display: block;
-  width: 100%;
-  height: auto;
+display: block;
+width: 100%;
+height: auto;
 }
 */
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
 }
 
 .overlay-container:hover .overlay {
-  opacity: 1;
+	opacity: 1;
 }
