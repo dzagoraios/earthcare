@@ -3,8 +3,6 @@
 	object-fit: contain;
 }
 
-
-
 main {
 	position: relative;
 	width: 100%;
@@ -12,16 +10,29 @@ main {
 	margin-bottom: 1vh;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("../img/2803064_17627-removebg-preview.png");\
+	background-image: url("../img/2803064_17627-removebg-preview.png");
+	justify-content: center;
+
 
 	/*<a href='https://www.freepik.com/free-vector/illustration-human-avatar-with-environment_2803064.htm#query=sustainable%20city&position=0&from_view=keyword&track=ais'>Image by rawpixel.com</a> on Freepik*/
 }
 
-#mainGrid{
+.mainGrid{
 	background-color: rgba(243, 236, 206, .5);
 	width:100%;
 	justify-content: center;
 }
+
+
+.tabletContent{
+	display: none;
+}
+
+.mobileContent{
+	display: none;
+}
+
+
 
 #articles {
 	padding: 4px;
@@ -62,6 +73,42 @@ main {
 	border-bottom-left-radius: 0.375rem;
 }
 
-@media screen and (max-width: 1050px){
-	
+@media screen and (max-width: 768px){
+
+	.mainContent {
+		display: none;
+	}
+
+	.tabletContent{
+		display: flex;
+	}
+
+	.mobileContent{
+		display:none;
+	}
+
+	#recycleSymbol{
+		max-width: 40vw;
+
+	}
 }
+
+@media screen and (max-width: 576px){
+
+	.mainContent {
+		display: none;
+	}
+
+	.tabletContent{
+		display: none;
+	}
+
+
+	.mobileContent{
+		display:flex;
+	}
+
+	#recycleSymbol{
+		max-width: 70vw;
+
+	}

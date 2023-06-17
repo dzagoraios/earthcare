@@ -1,6 +1,6 @@
 <head>
 	<meta charset="utf-8">
-	
+
 	<!-- for responsive design -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,17 +12,17 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/index.css">
-	
+
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	
+
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-	
+
 	<!--JS-->
 	<script src="js/header.js"></script>
 	<script src="js/footer.js"></script>
-	
+
 
 	<title>Αρχική | Earthcare</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
@@ -33,83 +33,135 @@
 		<!--Header loads with js/header.js-->
 	</div>
 	<main class="container">
-		<div id="mainGrid" class="container">
-			<div class="row" id="intro">
-				<div class="row" id="title">
-					<h2 class="text-center">Ο σεβασμός στο περιβάλλον είναι τρόπος ζωής</h2>
+		<div class="mainGrid">
+			<div class="container mainContent">
+				<div class="row" id="intro">
+					<div class="row mx-auto" id="title">
+						<h2 class="text-center"><b>Ο σεβασμός στο περιβάλλον είναι τρόπος ζωής</b></h2>
+					</div>
+					<div class="row mx-auto" id="reduce">
+						<h4 class="text-center">Εξοικονομούμε πόρους</h4>
+						<p class="text-center">...γιατί οι πρώτες ύλες δεν είναι ανεξάντλητες</p>
+					</div>
+					<div class="row">
+						<div class="col-md align-self-end" id="reuse">
+							<h4 class="text-center">Επαναχρησιμοποιούμε</h4>
+							<p class="text-center">Παρατείνουμε τη ζωή των υπαρχόντων αντικειμένων</p>
+						</div>
+						<div class="col-md mx-auto" id="recycleSymbol">
+							<img src="icons/Recycling_symbol_noBg_green.svg">
+						</div>
+						<div class="col-md align-self-end" id="recycle">
+							<h4 class="text-center">Ανακυκλώνουμε</h4>
+							<p class="text-center">Δίνουμε νέα ζωή στα απορρίματά μας</p>
+						</div>
+					</div>
 				</div>
-				<div class="row" id="reduce">
-					<h4 class="text-center">Εξοικονομούμε πόρους</h4>
-					<p class="text-center">...γιατί οι πρώτες ύλες δεν είναι ανεξάντλητες</p>
+			</div>
+			<div class="container tabletContent">
+				<div class="row" id="intro">
+					<div class="row mx-auto" id="title">
+						<h2 class="text-center"><b>Ο σεβασμός στο περιβάλλον είναι τρόπος ζωής</b></h2>
+					</div>
+					<div class="row">
+						<div class="col my-auto">
+							<div class="mx-auto" id="recycleSymbol">
+								<img src="icons/Recycling_symbol_noBg_green.svg">
+							</div>
+						</div>
+						<div class="col">
+							<div class="row mx-auto" id="reduce">
+								<h4 class="text-center">Εξοικονομούμε πόρους</h4>
+								<p class="text-center">...γιατί οι πρώτες ύλες δεν είναι ανεξάντλητες</p>
+							</div>
+							<div class="row mx-auto" id="reuse">
+								<h4 class="text-center">Επαναχρησιμοποιούμε</h4>
+								<p class="text-center">Παρατείνουμε τη ζωή των υπαρχόντων αντικειμένων</p>
+							</div>
+							<div class="row mx-auto" id="recycle">
+								<h4 class="text-center">Ανακυκλώνουμε</h4>
+								<p class="text-center">Δίνουμε νέα ζωή στα απορρίματά μας</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="row">
-					<div class="col align-self-end" id="reuse">
+			</div>
+			<div class="container mobileContent">
+				<div class="row" id="intro">
+					<div class="row mx-auto" id="title">
+						<h2 class="text-center"><b>Ο σεβασμός στο περιβάλλον είναι τρόπος ζωής</b></h2>
+					</div>
+					<div class="row mx-auto" id="recycleSymbol">
+						<img src="icons/Recycling_symbol_noBg_green.svg">
+					</div>
+					<div class="row mx-auto" id="reduce">
+						<h4 class="text-center">Εξοικονομούμε πόρους</h4>
+						<p class="text-center">...γιατί οι πρώτες ύλες δεν είναι ανεξάντλητες</p>
+					</div>
+					<div class="row mx-auto" id="reuse">
 						<h4 class="text-center">Επαναχρησιμοποιούμε</h4>
 						<p class="text-center">Παρατείνουμε τη ζωή των υπαρχόντων αντικειμένων</p>
 					</div>
-					<div class="col justify-content-center" id="recycleSymbol">
-						<img src="icons/Recycling_symbol_noBg_green.svg">
-					</div>
-					<div class="col align-self-end" id="recycle">
+					<div class="row mx-auto" id="recycle">
 						<h4 class="text-center">Ανακυκλώνουμε</h4>
 						<p class="text-center">Δίνουμε νέα ζωή στα απορρίματά μας</p>
 					</div>
 				</div>
-
-
 			</div>
-			<div id="articles" class=" row justify-content-center">
-				<h2>Πρόσφατα Άρθρα</h2>
-				<div class="col">
-					<div class="card article-card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Άρθρο 1</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Περισσότερα</a>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card article-card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Άρθρο 2</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Περισσότερα</a>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card article-card">
-						<img class="card-img-top" src="..." alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Άρθρο 3</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Περισσότερα</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="events">
-				<h2>Εκδηλώσεις</h2>
-				<div class="card event-card">
-					<img class="card-img-left" src="img/13146308_Garbage-sorting-set.jpg" alt="Card image cap">
+		</div>
+
+		<div id="articles" class=" row justify-content-center">
+			<h2>Πρόσφατα Άρθρα</h2>
+			<div class="col-md">
+				<div class="card article-card">
+					<img class="card-img-top" src="..." alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Εκδήλωση 1</h5>
+						<h5 class="card-title">Άρθρο 1</h5>
 						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Αγοράστε εισιτήρια</a>
+						<a href="#" class="btn btn-primary">Περισσότερα</a>
 					</div>
 				</div>
-				<br/>
-				<div class="text-center">
-					<a class="btn btn-primary" href="events.html">Δείτε όλες τις εκδηλώσεις</a>
+			</div>
+			<div class="col-md">
+				<div class="card article-card">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Άρθρο 2</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Περισσότερα</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card article-card">
+					<img class="card-img-top" src="..." alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Άρθρο 3</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Περισσότερα</a>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div id="events">
+			<h2>Εκδηλώσεις</h2>
+			<div class="card event-card">
+				<img class="card-img-left" src="img/13146308_Garbage-sorting-set.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Εκδήλωση 1</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Αγοράστε εισιτήρια</a>
+				</div>
+			</div>
+			<br/>
+			<div class="text-center">
+				<a class="btn btn-primary" href="events.html">Δείτε όλες τις εκδηλώσεις</a>
+			</div>
+		</div>
+		</div>
 	</main>
-	<div id="footer">
-		<!--Footer loads with js/footer.js-->
-	</div>
+<div id="footer">
+	<!--Footer loads with js/footer.js-->
+</div>
 
 </body>
