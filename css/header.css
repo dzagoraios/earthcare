@@ -8,6 +8,11 @@ header{
 	
 }
 
+#header .container-fluid {
+	padding-left:0;
+	padding-right: 0;
+}
+
 nav{
 	left: 0px; 
 	top: 0px;
@@ -27,12 +32,28 @@ nav{
     border: 0px;
     object-fit: contain;
 	vertical-align: middle;
+	padding-left: 12px;
 }
+
+.navbar-toggler {
+	margin-right: 12px;
+}
+
 
 .navbar-nav{
 	align-items: flex-end;
 }
 
-.show{
+.navbar-collapse {
+	padding-right: 20px;
+}
+
+.show {
+    background-color: #89BD55;
+	
+}
+
+.collapsing {
     background-color: #89BD55;
 }
+
