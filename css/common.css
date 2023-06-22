@@ -24,7 +24,7 @@ main {
 	width: 100%;
     border: 0px;
 	height: 100px;
-	z-index: 1;
+	position: relative;
 }
 
 img {
