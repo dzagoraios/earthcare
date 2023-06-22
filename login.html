@@ -19,6 +19,9 @@
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	
 	<!--JS-->
 	<script src="js/header.js"></script>
 	<script src="js/footer.js"></script>
@@ -27,7 +30,7 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
-<body>
+<body ng-app="login">
 	<div id="header">
 		<!--Header loads with js/header.js-->
 	</div>
@@ -40,18 +43,18 @@
 				<a class="btn btn-primary" href="signup.html">Εγγραφή</a>
 			</div>
 			<div class="col align-items-center">
-				<form id="loginForm" action="/action_page.php">
+				<form id="loginForm" method="POST">
 					<div class="form-group">
 						<label for="username">Όνομα χρήστη:</label>
-						<input type="username" class="form-control" id="username" required="true">
+						<input type="username" class="form-control" id="username" ng-model="username" required="true">
 					</div>
 					<br/>
 					<div class="form-group">
 						<label for="password">Κωδικός πρόσβασης:</label>
-						<input type="password" class="form-control" id="password" required="true">
+						<input type="password" class="form-control" id="password" ng-model="password" required="true">
 					</div>
 					<br/>
-					<button type="submit" class="btn btn-primary">Σύδεση</button>
+					<button type="submit" class="btn btn-primary" formaction="/Select">Σύδεση</button>
 				</form>
 			</div>
 		</div>

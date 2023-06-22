@@ -19,6 +19,9 @@
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	
 	<!--JS-->
 	<script src="js/header.js"></script>
 	<script src="js/footer.js"></script>
@@ -27,7 +30,7 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">	
 </head>
 
-<body>
+<body ng-app="signup">
 	<div id="header">
 		<!--Header loads with js/header.js-->
 	</div>
@@ -43,7 +46,7 @@
 				<form id="signupForm" action="/action_page.php">
 					<div class="form-group">
 						<label for="firstname">Όνομα:</label>
-						<input type="firstname" class="form-control" id="firstname" required="true">
+						<input type="firstname" class="form-control" id="firstname" ng-model required="true">
 					</div>
 					<br/>
 					<div class="form-group">
